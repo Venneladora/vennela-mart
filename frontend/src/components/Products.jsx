@@ -205,8 +205,7 @@ Beetroot:
   const [products, setProducts] = useState([]);
   useEffect(() => {
 
-    axios
-      .get("http://localhost:8080/products")
+    axios.get("https://vennela-mart-production.up.railway.app/products")
 
       .then((response) => {
         setProducts(response.data);
