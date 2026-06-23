@@ -46,13 +46,12 @@ const handleLogin = async () => {
   try {
 
     const response = await axios.post(
-      "http://localhost:8080/login",
-      {
-        email,
-        password
-      }
-    );
-
+  "https://vennela-mart-production.up.railway.app/login",
+  {
+    email,
+    password
+  }
+);
     if (response.data === "Login Success") {
 
       localStorage.setItem("user", "loggedin");

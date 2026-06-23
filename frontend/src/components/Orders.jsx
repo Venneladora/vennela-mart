@@ -11,7 +11,7 @@ const Orders = () => {
   console.log("Email:", email);
 
   axios
-    .get(`http://localhost:8080/orders/${email}`)
+    .get(`"https://vennela-mart-production.up.railway.app/orders/${email}`)
     .then((response) => {
 
       console.log(response.data);

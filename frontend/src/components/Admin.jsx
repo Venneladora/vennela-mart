@@ -20,8 +20,7 @@ const Admin = () => {
 
   const fetchStats = () => {
 
-    axios
-      .get("http://localhost:8080/admin/stats")
+   axios.get("https://vennela-mart-production.up.railway.app/admin/stats")
       .then((response) => {
         setStats(response.data);
       })

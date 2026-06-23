@@ -62,7 +62,7 @@ const order = {
   products: JSON.stringify(cart)
 };
       await axios.post(
-        "http://localhost:8080/orders",
+        "https://vennela-mart-production.up.railway.app/orders",
         order
       );
 

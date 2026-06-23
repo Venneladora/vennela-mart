@@ -57,15 +57,14 @@ const handleSignup = async () => {
   try {
 
     const response = await axios.post(
-  "http://localhost:8080/register",
-      {
-        name,
-        email,
-        phone,
-        password
-      }
-    );
-
+  "https://vennela-mart-production.up.railway.app/register",
+  {
+    name,
+    email,
+    phone,
+    password
+  }
+);
   if (response.status === 200)  {
 
       alert("Account Created Successfully 🎉");
